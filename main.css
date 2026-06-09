@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #38bdf8;
+  --secondary-color: #2ecc71;
+  --background-color: #0f172a;
+  --text-color: #f8fafc;
+  --secondary-text-color: #94a3b8;
+  --card-background: #1e293b;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  padding: 20px;
+}
+.card {
+  background-color: var(--card-background);
+  box-shadow: 0 4px 8px var(--card-shadow);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin-top: 20px;
+}
+.card h2 {
+  margin-bottom: 10px;
+}
+.card p {
+  margin-bottom: 5px;
+  color: var(--secondary-text-color);
+}
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-container input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
