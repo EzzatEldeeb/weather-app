@@ -15,7 +15,8 @@ searchBtn.addEventListener("click", (e) => {
 async function getWeather(city) {
   try {
     main.innerHTML = `<p>Loading...</p>`;
-    const api = `http://api.weatherapi.com/v1/current.json?key=a59e5e847e044882a23171048260806&q=${city}&aqi=no`;
+    const api = `https://api.weatherapi.com/v1/current.json?key=a59e5e847e044882a23171048260806&q=${city}&aqi=no
+`;
 
     const response = await fetch(api);
 
